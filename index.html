@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/general.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/home.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/services.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <title>Flores Ariel</title>
+  </head>
+  <body>
+    <div class="container_home">
+      <div class="welcome_home"><h2 class="h2_conf">Welcome</h2></div>
+      <div class="left_home">
+         <h2 class="h2_conf">Welcome</h2>
+         <h1 class="h1_conf">Titulo</h1>
+         <p class="p_conf">
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+</p>
+      </div>
+      <div class="right_home">
+        <div class="img_home"></div>
+      </div>
+    </div>
+
+
+    <div class="container">
+    <h1 class="title_services h1_conf">Services</h1>
+    <div class="container_services">
+     <div class="left_services">
+       <ul>
+         <li><img src="recursos/icons/Ramo1.png" alt=""><a onclick="load_services('Ramo1')">Ramos1</a></li>
+         <li><img src="recursos/icons/Ramo2.png" alt=""><a onclick="load_services('Ramo2')">Ramos2</a></li>
+         <li><img src="recursos/icons/Ramo3.png" alt=""><a onclick="load_services('Ramo3')">Ramos3</a></li>
+         <li><img src="recursos/icons/Ramo4.png" alt=""><a onclick="load_services('Ramo4')">Ramos4</a></li>
+         <li><img src="recursos/icons/Ramo5.png" alt=""><a onclick="load_services('Ramo5')">Ramos5</a></li>
+       </ul>
+     </div>
+     <div class="right_services"></div>
+    </div>
+    </div>
+
+  </body>
+  <script>
+    function load_services(valor){
+      let detalle ={
+        'Ramo1':'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+
+        'Ramo2':'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+        
+        'Ramo3':'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+        
+        'Ramo4':'Lorem ipsunjbnjcvnjnjcvnncvnvcnjvcnjnvjnvnvjnjvnjv m dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+        
+        'Ramo5':`Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+        erat, sed diam volup ,lñmñgmbñḿñlsg´bnmlñǵmlñḿlñǵsdfhnlñśmlfghñmgñ´hmnm
+        ḿ km ǵmǵsm´fknm mn ḿ´ñgm ñḿñ<Plug>CocRefreshḿ´ñ 'gm ñm ñmñ mñm´ñ glñm
+        gdñḿ gñĺmg ñĺmñ glmñl gmñ mgñmg ñḿs g´ñg lmñ gm´ñl gmñ gmñḿg ñmlg ñǵ
+        m gñm gñḿñg m gñmg ñ gmlñḿlsg m g gmm, g,.m g, gs mgḱl,m gl kldgkgmkm
+        mknnm klnlñknlkn l knl k dfgsnlñk nnknpjkhnp fdjn fjdk n ñkjn  mk klñ
+        nñ'wtua. At vero eos et accusam et justo duo dolores et
+        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+        ipsum dolor sit ame estok njiin nnj njn nn ujnuj nu ubn uu bu bu bub ub
+        ub ub ubu bu bu b ub ubu b ubu bu bub ub u n n  n n kjbkj bijgb iu byub
+        uyv v yuv uyv vu vu. `
+      };
+      let salida = `
+          <img class="img_view" src="recursos/icons/${valor + ".png"}">
+          <h2 class="h2_conf">${valor}</h2>
+          <p class="p_conf">${detalle[valor]} </p>
+      `;
+      document.querySelector('.right_services').innerHTML = salida;
+    }
+    load_services('Ramo1');
+  </script>
+</html> 
