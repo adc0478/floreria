@@ -6,17 +6,20 @@
     <link rel="stylesheet" href="css/general.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/home.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/services.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/proyecto.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/about.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/staff.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <title>Flores Ariel</title>
   </head>
   <body>
     <div class="container_home">
       <div class="welcome_home"><h2 class="h2_conf">Welcome</h2></div>
       <div class="left_home">
-         <h2 class="h2_conf">Welcome</h2>
-         <h1 class="h1_conf">Titulo</h1>
-         <p class="p_conf">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-</p>
+        <h2 class="h2_conf">Welcome</h2>
+        <h1 class="h1_conf">Titulo</h1>
+        <p class="p_conf">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
       </div>
       <div class="right_home">
         <div class="img_home"></div>
@@ -25,53 +28,97 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 
     <div class="container">
-    <h1 class="title_services h1_conf">Services</h1>
-    <div class="container_services">
-     <div class="left_services">
-       <ul>
-         <li><img src="recursos/icons/Ramo1.png" alt=""><a onclick="load_services('Ramo1')">Ramos1</a></li>
-         <li><img src="recursos/icons/Ramo2.png" alt=""><a onclick="load_services('Ramo2')">Ramos2</a></li>
-         <li><img src="recursos/icons/Ramo3.png" alt=""><a onclick="load_services('Ramo3')">Ramos3</a></li>
-         <li><img src="recursos/icons/Ramo4.png" alt=""><a onclick="load_services('Ramo4')">Ramos4</a></li>
-         <li><img src="recursos/icons/Ramo5.png" alt=""><a onclick="load_services('Ramo5')">Ramos5</a></li>
-       </ul>
-     </div>
-     <div class="right_services"></div>
+      <h1 class="title_services h1_conf">Services</h1>
+      <div class="container_services">
+        <div class="left_services">
+          <ul>
+            <li><img src="recursos/icons/Ramo1.png" alt=""><a onclick="load_services('Ramo1')">Ramos1</a></li>
+            <li><img src="recursos/icons/Ramo2.png" alt=""><a onclick="load_services('Ramo2')">Ramos2</a></li>
+            <li><img src="recursos/icons/Ramo3.png" alt=""><a onclick="load_services('Ramo3')">Ramos3</a></li>
+            <li><img src="recursos/icons/Ramo4.png" alt=""><a onclick="load_services('Ramo4')">Ramos4</a></li>
+            <li><img src="recursos/icons/Ramo5.png" alt=""><a onclick="load_services('Ramo5')">Ramos5</a></li>
+          </ul>
+        </div>
+        <div class="right_services"></div>
+      </div>
     </div>
+
+    <!--Proyectos -->
+    <div class="container_proyecto">
+      <h1 class="h1_conf">Titulo</h1>
+      <h3>Aqui les presento mis proyectos</h3>
+      <div class="carrusel">
+        <div class="card card_uno" onmouseout="quitar_etiqueta('uno')" onmouseover="ver_etiqueta('uno')" style="background-image:url('recursos/img/services1.webp')">
+          <p id="uno">Proyecto hecho en CSS y HtML</p>
+        </div>        
+        <div class="card card_dos" onmouseout="quitar_etiqueta('dos')" onmouseover="ver_etiqueta('dos')" style="background-image:url('recursos/img/services2.webp')">
+          <p id="dos">Proyecto hecho en CSS y HtML</p>
+        </div>
+        <div class="card card_tres" onmouseout="quitar_etiqueta('tres')" onmouseover="ver_etiqueta('tres')" style="background-image:url('recursos/img/services3.jpg')">
+          <p id="tres">Proyecto hecho en CSS y HtML</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!--About -->
+
+    <div class="container_about">
+      <h2 class="h2_conf exp">Experiense ---</h2>
+      <div class="left_about"></div>
+      <div class="right_about">
+       <h2 class="h2_conf">Welcome</h2>
+       <h1 class="h1_conf">About</h1>
+       <p class="p_conf"> 
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+</p>
+      </div>
+    </div>
+
+    <!--Staff -->
+    <div class="container_staff">
+      <h1 class="h1_conf">Our Staff</h1>
+      <p class="p_conf">Dedicados a darte lo que necesitas</p>
+      <div class="target">
+        
+        <div class="ficha">
+          <img class="img_staff" src="recursos/img/Persona1.jpg" alt=""/>
+          <p class="p_conf">Balceiro Ricardo</p>
+          <h2 class="h2_conf">CEO</h2>
+          <div class="redes">
+            <img src="recursos/icons/facebook-brands.svg" alt="Facebook">
+            <img src="recursos/icons/twitter-brands.svg" alt="Twiter">
+            <img src="recursos/icons/instagram-brands.svg" alt="Instagram">
+          </div>
+        </div>
+        
+        <div class="ficha">
+          <img class="img_staff" src="recursos/img/Persona2.jpg" alt=""/>
+          <p class="p_conf">Vazquez Erica</p>
+          <h2 class="h2_conf">Manager</h2>
+          <div class="redes">
+            <img src="recursos/icons/facebook-brands.svg" alt="Facebook">
+            <img src="recursos/icons/twitter-brands.svg" alt="Twiter">
+            <img src="recursos/icons/instagram-brands.svg" alt="Instagram">
+          </div>
+        </div>
+
+        <div class="ficha">
+          <img class="img_staff" src="recursos/img/person1.jpg" alt=""/>
+          <p class="p_conf">Sanchez yesica</p>
+          <h2 class="h2_conf">Social media</h2>
+          <div class="redes">
+            <img src="recursos/icons/facebook-brands.svg" alt="Facebook">
+            <img src="recursos/icons/twitter-brands.svg" alt="Twiter">
+            <img src="recursos/icons/instagram-brands.svg" alt="Instagram">
+          </div>
+        </div>
+
+
+      </div>
+
     </div>
 
   </body>
-  <script>
-    function load_services(valor){
-      let detalle ={
-        'Ramo1':'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-
-        'Ramo2':'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-        
-        'Ramo3':'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-        
-        'Ramo4':'Lorem ipsunjbnjcvnjnjcvnncvnvcnjvcnjnvjnvnvjnjvnjv m dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-        
-        'Ramo5':`Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-        erat, sed diam volup ,lñmñgmbñḿñlsg´bnmlñǵmlñḿlñǵsdfhnlñśmlfghñmgñ´hmnm
-        ḿ km ǵmǵsm´fknm mn ḿ´ñgm ñḿñ<Plug>CocRefreshḿ´ñ 'gm ñm ñmñ mñm´ñ glñm
-        gdñḿ gñĺmg ñĺmñ glmñl gmñ mgñmg ñḿs g´ñg lmñ gm´ñl gmñ gmñḿg ñmlg ñǵ
-        m gñm gñḿñg m gñmg ñ gmlñḿlsg m g gmm, g,.m g, gs mgḱl,m gl kldgkgmkm
-        mknnm klnlñknlkn l knl k dfgsnlñk nnknpjkhnp fdjn fjdk n ñkjn  mk klñ
-        nñ'wtua. At vero eos et accusam et justo duo dolores et
-        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit ame estok njiin nnj njn nn ujnuj nu ubn uu bu bu bub ub
-        ub ub ubu bu bu b ub ubu b ubu bu bub ub u n n  n n kjbkj bijgb iu byub
-        uyv v yuv uyv vu vu. `
-      };
-      let salida = `
-          <img class="img_view" src="recursos/icons/${valor + ".png"}">
-          <h2 class="h2_conf">${valor}</h2>
-          <p class="p_conf">${detalle[valor]} </p>
-      `;
-      document.querySelector('.right_services').innerHTML = salida;
-    }
-    load_services('Ramo1');
-  </script>
+  <script src="js/function_generic.js"></script>
 </html> 

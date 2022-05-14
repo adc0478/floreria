@@ -1,0 +1,59 @@
+.container_about{
+   width: 90%;
+   margin:0 auto;
+   margin-top: 50px;
+   display:grid;
+   grid-template-columns: 40% 60%;
+   grid-gap:20px;
+   height:600px;
+  position: relative;
+}
+.left_about{
+   background-image: url('../recursos/img/jardin.webp');
+   background-size: cover;
+}
+.right_about{
+}
+.exp{
+  position: absolute;
+  bottom:50px;
+  left: calc(50% - 150px);
+  width:200px;
+  background-color: rgb(49,222,121);
+  height:60px;
+  cursor:pointer;
+  display:grid;
+  justify-content:center;
+  align-content:center;
+  color:rgb(117,117,117);
+  box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+  }
+.exp:hover{
+animation-name: agitar;
+  animation-duration:.3s;
+
+}
+@keyframes agitar{
+  0%{
+   transform: rotate(0deg);
+  }
+  50%{
+   transform: rotate(5deg);
+  }
+  100%{
+
+   transform: rotate(0deg);
+  }
+}
+@media screen and (max-width:768px){
+  .container_about{
+    grid-template-columns: 1fr;
+  }
+  
+  .right_about{
+    position:absolute;
+  }
+  .exp{
+     display:none;
+  }
+}
