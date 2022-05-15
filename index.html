@@ -9,10 +9,21 @@
     <link rel="stylesheet" href="css/proyecto.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/about.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/staff.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/menu.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <title>Flores Ariel</title>
   </head>
   <body>
-    <div class="container_home">
+    <div class="navbar">
+      <span class="btn_menu"><img class="img_menu" src="" alt="menu" onclick="ver_menu()" value="1"></span>
+      <ul class="ul_full" id="menu">
+        <li><a class="a_menu" onclick="ver_menu()" href="#container_home">Home</a></li>
+        <li><a class="a_menu" onclick="ver_menu()" href="#container_services">Services</a></li>
+        <li><a class="a_menu" onclick="ver_menu()" href="#container_proyects">Proyects</a></li>
+        <li><a class="a_menu" onclick="ver_menu()" href="#container_about">About</a></li>
+        <li><a class="a_menu" onclick="ver_menu()" href="#container_staff">Our Staff</a></li>
+      </ul>
+    </div>
+    <div class="container_home" id="container_home">
       <div class="welcome_home"><h2 class="h2_conf">Welcome</h2></div>
       <div class="left_home">
         <h2 class="h2_conf">Welcome</h2>
@@ -29,14 +40,14 @@
 
     <div class="container">
       <h1 class="title_services h1_conf">Services</h1>
-      <div class="container_services">
+      <div class="container_services" id="container_services">
         <div class="left_services">
           <ul>
-            <li><img src="recursos/icons/Ramo1.png" alt=""><a onclick="load_services('Ramo1')">Ramos1</a></li>
-            <li><img src="recursos/icons/Ramo2.png" alt=""><a onclick="load_services('Ramo2')">Ramos2</a></li>
-            <li><img src="recursos/icons/Ramo3.png" alt=""><a onclick="load_services('Ramo3')">Ramos3</a></li>
-            <li><img src="recursos/icons/Ramo4.png" alt=""><a onclick="load_services('Ramo4')">Ramos4</a></li>
-            <li><img src="recursos/icons/Ramo5.png" alt=""><a onclick="load_services('Ramo5')">Ramos5</a></li>
+            <li><img src="recursos/icons/Ramo1.png" alt=""><a class ="a_linea" onclick="load_services('Ramo1')">Ramos1</a></li>
+            <li><img src="recursos/icons/Ramo2.png" alt=""><a class ="a_linea" onclick="load_services('Ramo2')">Ramos2</a></li>
+            <li><img src="recursos/icons/Ramo3.png" alt=""><a class ="a_linea" onclick="load_services('Ramo3')">Ramos3</a></li>
+            <li><img src="recursos/icons/Ramo4.png" alt=""><a class ="a_linea" onclick="load_services('Ramo4')">Ramos4</a></li>
+            <li><img src="recursos/icons/Ramo5.png" alt=""><a class ="a_linea" onclick="load_services('Ramo5')">Ramos5</a></li>
           </ul>
         </div>
         <div class="right_services"></div>
@@ -44,7 +55,7 @@
     </div>
 
     <!--Proyectos -->
-    <div class="container_proyecto">
+    <div class="container_proyecto" id="container_proyects">
       <h1 class="h1_conf">Titulo</h1>
       <h3>Aqui les presento mis proyectos</h3>
       <div class="carrusel">
@@ -63,7 +74,7 @@
 
     <!--About -->
 
-    <div class="container_about">
+    <div class="container_about" id="container_about">
       <h2 class="h2_conf exp">Experiense ---</h2>
       <div class="left_about"></div>
       <div class="right_about">
@@ -76,7 +87,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     </div>
 
     <!--Staff -->
-    <div class="container_staff">
+    <div class="container_staff" id="container_staff">
       <h1 class="h1_conf">Our Staff</h1>
       <p class="p_conf">Dedicados a darte lo que necesitas</p>
       <div class="target">

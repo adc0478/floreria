@@ -1,9 +1,11 @@
 .container_home{
   width: 98%;
   margin: 0 auto;
+  margin-top:45px;
   height: 100vh;
   display:grid;
   grid-template-columns: 10% 45% 45%;
+  position:relative;
 }
 .welcome_home{
   display: grid;
@@ -13,9 +15,7 @@
   letter-spacing:4px;
   transform: rotate(-90deg);
 }
-.left_home h2{
-  margin-top:80px;
-}
+
 .left_home h1,h2{
   text-align: center;
  }
@@ -51,12 +51,13 @@
    background-size: cover;
 }
 @media screen and (max-width: 767px){
+  .welcome_home{
+    display: none;
+  }
   .container_home{
     grid-template-columns: 1fr;
   }
-  .welcome_home h2{
-    transform: rotate(0deg);
-  }
+  
   .welcome_home{
     justify-self: center;
   }
@@ -65,6 +66,6 @@
   }
   .welcome_home, .left_home{
     position: absolute;
-    z-index: 100;
+    z-index: 1;
   }
 }

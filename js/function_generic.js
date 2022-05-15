@@ -30,8 +30,14 @@ function load_services(valor){
     function inicio(){
       load_services('Ramo1');
     }
-    function carrusell(contenedor_id, lista_elementos){
-     
+    function ver_menu(){
+      if (document.querySelector(".img_menu").value == "1"){
+        document.querySelector('#menu').setAttribute("class", "ul_movil");
+        document.querySelector(".img_menu").value = "2";
+      }else{
 
-    }
+        document.querySelector('#menu').setAttribute("class", "ul_full");        
+        document.querySelector(".img_menu").value = "1";
+      }
+    } 
 window.onload = inicio;

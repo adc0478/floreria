@@ -27,7 +27,7 @@ height: auto;
   height:30px;
 }
 
-a:after{
+.a_linea:after{
   content:"";
   position:absolute;
   right:0;
@@ -37,7 +37,7 @@ a:after{
   width:0%;
   background-color:rgb(1,157,224);
 }
-a:hover::after{
+.a_linea:hover::after{
   animation-name: linea;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;

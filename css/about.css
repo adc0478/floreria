@@ -48,10 +48,12 @@ animation-name: agitar;
 @media screen and (max-width:768px){
   .container_about{
     grid-template-columns: 1fr;
+    height:100vh; 
   }
   
   .right_about{
     position:absolute;
+    height: auto;
   }
   .exp{
      display:none;
